@@ -1,4 +1,4 @@
-package org.d3if3117.rumuspersegi
+package org.d3if3117.rumuspersegi.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

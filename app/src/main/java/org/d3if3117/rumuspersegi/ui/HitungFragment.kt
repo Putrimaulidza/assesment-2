@@ -1,32 +1,42 @@
-package org.d3if3117.rumuspersegi
+package org.d3if3117.rumuspersegi.ui
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.LayoutInflater
+import android.view.*
+import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import org.d3if3117.rumuspersegi.databinding.ActivityMainBinding
+import org.d3if3117.rumuspersegi.R
 import org.d3if3117.rumuspersegi.model.HasilPersegi
-import org.d3if3117.rumuspersegi.ui.MainViewModel
+import org.d3if3117.rumuspersegi.databinding.FragmentHitungBinding
 
 
-class MainActivity : AppCompatActivity(){
-    lateinit var binding: ActivityMainBinding
+class HitungFragment : Fragment(){
+    lateinit var binding: FragmentHitungBinding
+
     private val viewModel: MainViewModel by lazy {
-        ViewModelProvider(this)[MainViewModel::class.java]
+        ViewModelProvider(requireActivity())[MainViewModel::class.java]
     }
-    override fun onCreate(savedInstanceState: Bundle?) {
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        binding = FragmentHitungBinding.inflate(layoutInflater, container, false)
+        return binding.root
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.btnKeliling.setOnClickListener { hitung() }
-        viewModel.getHasilPersegi().observe(this, { showResult(it) })
-}
+        viewModel.getHasilPersegi().observe(requireActivity(), { showResult(it) })
+
+    }
     private fun hitung() {
         val sisi = binding.etSisi.text.toString()
         if (TextUtils.isEmpty(sisi)) {
-            Toast.makeText(this, R.string.sisi_invalid, Toast.LENGTH_LONG).show()
+            Toast.makeText(context, R.string.sisi_invalid, Toast.LENGTH_LONG).show()
             return
         }
        viewModel.hitungPersegi(
