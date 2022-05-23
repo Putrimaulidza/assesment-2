@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RumusPersegi</string>
+    <string name="rumus">Rumus</string>
+    <string name="input">Input</string>
+    <string name="hitung">Hitung</string>
+    <string name="keliling">Keliling</string>
+    <string name="btnKeliling">btnKeliling</string>
+    <string name="sisi_invalid">sisi tidak boleh kosong.</string>
+    <string name="keliling_x">%1$.2f</string>
+    <string name="luas_x">%1$.2f</string>
+    <string name="value_x">Keliling: %1$.2f - Volume: %1$.2f</string>
+</resources>
