@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.HitungFragment">
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -49,11 +49,70 @@
 
             </LinearLayout>
 
+
+            <LinearLayout
+                android:id="@+id/keliling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/tvKeliling"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Keliling"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/keliling"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Luas"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvLuas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/hitung"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/input"
+                android:layout_below="@+id/hasil"
                 android:gravity="center"
                 android:orientation="horizontal">
                 <Button
@@ -68,59 +127,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Hitung Luas" />
-            </LinearLayout>
-        
-            <LinearLayout
-                android:id="@+id/keliling"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/hitung"
-                android:orientation="horizontal"
-                android:paddingLeft="20dp"
-                android:paddingTop="20dp"
-                android:paddingRight="20dp">
-
-                <TextView
-                    android:id="@+id/tvKeliling"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:text="Keliling"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-                <TextView
+                <Button
+                    android:id="@+id/btnShare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" : "
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp" />
-                    
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:text="@string/bagikan"/>
+
+
             </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/keliling"
-            android:orientation="horizontal"
-            android:paddingLeft="20dp"
-            android:paddingTop="20dp"
-            android:paddingRight="20dp">
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="Luas"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" : "
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
-            <TextView
-                android:id="@+id/tvLuas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/black"/>
-        </LinearLayout>
+
+
 
         </RelativeLayout>
 

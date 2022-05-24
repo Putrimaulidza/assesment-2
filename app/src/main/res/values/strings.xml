@@ -9,4 +9,8 @@
     <string name="keliling_x">%1$.2f</string>
     <string name="luas_x">%1$.2f</string>
     <string name="value_x">Keliling: %1$.2f - Volume: %1$.2f</string>
+    <string name="copyright">Hitung Persegi merupakan sebuah aplikasi Android untuk menghitung luas dan keliling Persegi</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="bagikan_template">Luas : %1$s cm\nKeliling: %2$s</string>
 </resources>

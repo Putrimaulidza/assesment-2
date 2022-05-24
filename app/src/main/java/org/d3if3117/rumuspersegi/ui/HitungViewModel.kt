@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import org.d3if3117.rumuspersegi.model.HasilPersegi
 
-class MainViewModel : ViewModel() {
+class HitungViewModel : ViewModel() {
     private val hasilPersegi = MutableLiveData<HasilPersegi?>()
     fun hitungPersegi(sisi: Float) {
         val keliling = 4 * sisi
