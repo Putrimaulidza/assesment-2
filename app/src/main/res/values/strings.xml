@@ -13,4 +13,12 @@
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
     <string name="bagikan">Bagikan</string>
     <string name="bagikan_template">Luas : %1$s cm\nKeliling: %2$s</string>
+    <string name="belum_ada_data">Belum ada data</string>
+    <string name="histori">Histori</string>
+    <string name="hasil_x">Keliling: %1$.2f</string>
+    <string name="data_x">Luas: %1$.2f</string>
+    <string name="hapus_histori">Hapus histori</string>
+    <string name="konfirmasi_hapus">Hapus semua histori?</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
 </resources>

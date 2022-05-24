@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Semester 4/Mobpro/RumusPersegi/app/src/main/res/drawable/circle_background.xml" value="0.223" />
+        <entry key="..\:/Semester 4/Mobpro/RumusPersegi/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.127" />
         <entry key="..\:/Semester 4/Mobpro/RumusPersegi/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Semester 4/Mobpro/RumusPersegi/app/src/main/res/layout/fragment_about.xml" value="0.23550724637681159" />
-        <entry key="..\:/Semester 4/Mobpro/RumusPersegi/app/src/main/res/layout/fragment_hitung.xml" value="0.25" />
+        <entry key="..\:/Semester 4/Mobpro/RumusPersegi/app/src/main/res/layout/fragment_histori.xml" value="0.25" />
+        <entry key="..\:/Semester 4/Mobpro/RumusPersegi/app/src/main/res/layout/fragment_hitung.xml" value="0.1" />
+        <entry key="..\:/Semester 4/Mobpro/RumusPersegi/app/src/main/res/layout/item_histori.xml" value="0.25" />
+        <entry key="..\:/Semester 4/Mobpro/RumusPersegi/app/src/main/res/menu/histori_menu.xml" value="0.12962962962962962" />
         <entry key="..\:/Semester 4/Mobpro/RumusPersegi/app/src/main/res/menu/options_menu.xml" value="0.25" />
         <entry key="..\:/Semester 4/RumusPersegi/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>

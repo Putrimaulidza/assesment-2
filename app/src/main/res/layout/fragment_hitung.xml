@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.HitungFragment">
+    tools:context=".ui.hitung.HitungFragment">
 
 
     <ScrollView
@@ -59,21 +59,24 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="20dp"
                 android:paddingRight="20dp">
-
                 <TextView
-                    android:id="@+id/tvKeliling"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="Keliling"
+                    android:text="@string/keliling"
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" : "
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvKeliling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black" />
 
             </LinearLayout>
 
@@ -120,13 +123,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hitung Keliling" />
-                <Button
-                    android:id="@+id/btnLuas"
-                    style="@style/Widget.AppCompat.Button.Colored"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hitung Luas" />
+                    android:text="Hitung" />
                 <Button
                     android:id="@+id/btnShare"
                     android:layout_width="wrap_content"
