@@ -1,22 +1,27 @@
 [
     {
         "nama": "lingkaran",
+        "rumus": "3.14 * r^2",
         "gambar": "lingkaran.jpg" 
     },
     {
-        "nama": "segi-empat",
-        "gambar": "segi-empat.jpg"
-    },
-    {
         "nama": "persegi",
+        "rumus": "sisi * sisi",
         "gambar": "persegi.jpg"
     },
     {
         "nama": "jajar-genjang",
+        "rumus": "alas * tinggi",
         "gambar": "jajar-genjang.jpg"
     },
     {
         "nama": "segitiga",
+        "rumus": "1/2 * alas * tinggi",
         "gambar": "segitiga.jpg"
+    },
+    {
+        "nama": "segi-enam",
+        "rumus": "(3√3 s^2)/ 2",
+        "gambar": "segi-enam.jpg"
     }
 ]
