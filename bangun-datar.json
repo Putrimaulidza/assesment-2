@@ -1,0 +1,22 @@
+[
+    {
+        "nama": "lingkaran",
+        "gambar": "lingkaran.jpg" 
+    },
+    {
+        "nama": "segi-empat",
+        "gambar": "segi-empat.jpg"
+    },
+    {
+        "nama": "persegi",
+        "gambar": "persegi.jpg"
+    },
+    {
+        "nama": "jajar-genjang",
+        "gambar": "jajar-genjang.jpg"
+    },
+    {
+        "nama": "segitiga",
+        "gambar": "segitiga.jpg"
+    }
+]
